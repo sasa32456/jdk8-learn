@@ -90,3 +90,14 @@ public class MySetCollector2<T> implements Collector<T, Set<T>, Map<T, T>> {
         }
     }
 }
+/*
+
+收集器：
+对于Collectors静态工厂来说，其实现分为两种情况：
+1.通过CollectorImpl来实现
+2.通过reducing来实现，但reducing也是基于CollectorImpl
+
+
+
+
+ */
