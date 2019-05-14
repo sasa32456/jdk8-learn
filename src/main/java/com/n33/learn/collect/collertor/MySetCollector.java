@@ -47,7 +47,7 @@ public class MySetCollector<T> implements Collector<T, Set<T>, Set<T>> {
     }
 
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("hello","world","welcome","hello");
+        List<String> list = Arrays.asList("hello", "world", "welcome", "hello");
         Set<String> set = list.stream().collect(new MySetCollector<>());
         System.out.println(set);
     }
@@ -98,8 +98,8 @@ public class MySetCollector<T> implements Collector<T, Set<T>, Set<T>> {
  * Returns a {@code Set} of {@code Collector.Characteristics} indicating
  * the characteristics of this Collector.  This set should be immutable.
  * @return an immutable set of collector characteristics
-*返回{@code Collector.Characteristics}的{@code Set}指示
- *这个收藏家的特点。这个集合应该是不可变的。
+ * 返回{@code Collector.Characteristics}的{@code Set}指示
+ * 这个收藏家的特点。这个集合应该是不可变的。
  * @return一组不可变的收集器特征 * <p>
  * Set<Characteristics> characteristics();
  */
